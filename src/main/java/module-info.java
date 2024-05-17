@@ -3,6 +3,8 @@ module fes.aragon.proyectooxxo {
     requires javafx.fxml;
 
 
-    opens fes.aragon.proyectooxxo to javafx.fxml;
-    exports fes.aragon.proyectooxxo;
+    exports fes.aragon.proyectooxxo.Inicio;
+    opens fes.aragon.proyectooxxo.Inicio to javafx.fxml;
+    exports fes.aragon.proyectooxxo.controller;
+    opens fes.aragon.proyectooxxo.controller to javafx.fxml;
 }
