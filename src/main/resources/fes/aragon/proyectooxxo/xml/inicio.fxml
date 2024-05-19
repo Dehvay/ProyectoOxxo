@@ -16,6 +16,11 @@
                   <Image url="@../imagen/Oxxo_Logo.png" />
                </image>
             </ImageView>
+            <Button fx:id="idInicio" mnemonicParsing="false" onAction="#eventoAbrirInicio" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Inicio" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="16.0" />
+               </font>
+            </Button>
           <Button fx:id="idVentas" mnemonicParsing="false" onAction="#eventoAbrirVentas" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Ventas" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="16.0" />
@@ -26,9 +31,14 @@
                   <Font name="Book Antiqua" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="idProveedores" mnemonicParsing="false" onAction="#eventoAbrirProveedores" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #FFCD00;" text="Proveedores" textFill="WHITE">
+            <Button fx:id="idProveedores" mnemonicParsing="false" onAction="#eventoAbrirProveedores" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Proveedores" textFill="WHITE">
                <font>
-                  <Font name="Book Antiqua" size="16.0" />
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="idVentaDiaria" mnemonicParsing="false" onAction="#eventoAbrirVentaDiaria" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Venta Diaria" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="14.0" />
                </font>
             </Button>
         </items>

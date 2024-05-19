@@ -1,7 +1,7 @@
 module fes.aragon.proyectooxxo {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires org.kordamp.bootstrapfx.core;
 
     exports fes.aragon.proyectooxxo.Inicio;
     opens fes.aragon.proyectooxxo.Inicio to javafx.fxml;

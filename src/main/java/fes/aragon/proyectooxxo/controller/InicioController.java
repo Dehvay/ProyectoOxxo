@@ -12,6 +12,9 @@ public class InicioController {
     @FXML
     private BorderPane btpPrincipal;
     @FXML
+    private Button idInicio;
+
+    @FXML
     private Button idProductos;
 
     @FXML
@@ -20,6 +23,11 @@ public class InicioController {
     @FXML
     private Button idVentas;
 
+    @FXML
+    private Button idVentaDiaria;
+
+    @FXML
+    void eventoAbrirInicio(ActionEvent event) { ventana("/fes/aragon/proyectooxxo/xml/inicioboton.fxml");}
     @FXML
     void eventoAbrirProductos(ActionEvent event) {
         ventana("/fes/aragon/proyectooxxo/xml/productos.fxml");
@@ -34,6 +42,9 @@ public class InicioController {
     void eventoAbrirVentas(ActionEvent event) {
         ventana("/fes/aragon/proyectooxxo/xml/ventas.fxml");
     }
+    @FXML
+    void eventoAbrirVentaDiaria(ActionEvent event) {ventana("/fes/aragon/proyectooxxo/xml/ventadiaria.fxml");}
+
     ////////////////
     private void ventana(String ruta){
         try{
