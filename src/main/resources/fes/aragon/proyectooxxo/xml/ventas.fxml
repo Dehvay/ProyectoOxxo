@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -26,6 +27,9 @@
                <font>
                   <Font name="Book Antiqua" size="16.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
             </Button>
             <Button fx:id="idCancelarProducto" mnemonicParsing="false" onAction="#eventoCancelarProducto" style="-fx-background-color: FFCD00;" text="Cancelar Producto" textFill="WHITE">
                <font>

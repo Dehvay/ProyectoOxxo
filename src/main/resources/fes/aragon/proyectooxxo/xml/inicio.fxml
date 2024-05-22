@@ -16,7 +16,7 @@
                   <Image url="@../imagen/Oxxo_Logo.png" />
                </image>
             </ImageView>
-            <Button fx:id="idInicio" mnemonicParsing="false" onAction="#eventoAbrirInicio" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Inicio" textFill="WHITE">
+            <Button fx:id="idInicio" mnemonicParsing="false" onAction="#eventoAbrirInicio" prefHeight="35.0" prefWidth="110.0" snapToPixel="false" style="-fx-background-color: #FFCD00;" text="Inicio" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="16.0" />
                </font>
