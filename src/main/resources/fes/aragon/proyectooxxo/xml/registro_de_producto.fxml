@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.AgregarProductoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.AgregarProductoController">
    <children>
       <Label layoutX="164.0" layoutY="41.0" text="NUEVO PRODUCTO">
          <font>
@@ -18,17 +18,17 @@
       <Label layoutX="131.0" layoutY="137.0" text="Cantidad:" />
       <Label layoutX="95.0" layoutY="170.0" text="Precio Unitario:" />
       <Label layoutX="88.0" layoutY="202.0" text="Precio de Venta:" />
-      <Label layoutX="125.0" layoutY="235.0" text="Categoria:" />
-      <Label layoutX="57.0" layoutY="265.0" text="Fecha de Caducidad:" />
+      <Label layoutX="65.0" layoutY="236.0" text="Fecha de Caducidad:" />
       <TextField fx:id="nombretxt" layoutX="215.0" layoutY="100.0" prefHeight="24.0" prefWidth="246.0" />
       <TextField fx:id="cantidadtxt" layoutX="215.0" layoutY="133.0" prefHeight="24.0" prefWidth="246.0" />
       <TextField fx:id="preciounitariotxt" layoutX="215.0" layoutY="166.0" prefHeight="24.0" prefWidth="246.0" />
       <TextField fx:id="preciodeventatxt" layoutX="215.0" layoutY="198.0" prefHeight="24.0" prefWidth="246.0" />
-      <TextField fx:id="categoriatxt" layoutX="215.0" layoutY="231.0" prefHeight="24.0" prefWidth="246.0" />
-      <TextField fx:id="caducidadtxt" layoutX="215.0" layoutY="261.0" prefHeight="24.0" prefWidth="246.0" />
-      <Button fx:id="guardarbtn" layoutX="203.0" layoutY="454.0" mnemonicParsing="false" onAction="#guardarProducto" text="Guardar Producto" />
-      <Label layoutX="55.0" layoutY="300.0" text="Imagen del Producto:" />
-      <ImageView fx:id="imgProducto" fitHeight="126.0" fitWidth="246.0" layoutX="215.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="btnAbrirImagen" layoutX="94.0" layoutY="339.0" mnemonicParsing="false" onAction="#abrirImagen" text="Imagen" />
+      <TextField fx:id="caducidadtxt" layoutX="215.0" layoutY="232.0" prefHeight="24.0" prefWidth="246.0" />
+      <Button fx:id="guardarbtn" layoutX="201.0" layoutY="510.0" mnemonicParsing="false" onAction="#guardarProducto" text="Guardar Producto" />
+      <Label layoutX="53.0" layoutY="356.0" text="Imagen del Producto:" />
+      <ImageView fx:id="imgProducto" fitHeight="126.0" fitWidth="246.0" layoutX="213.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnAbrirImagen" layoutX="92.0" layoutY="395.0" mnemonicParsing="false" onAction="#abrirImagen" text="Imagen" />
+      <Label layoutX="93.0" layoutY="265.0" text="Id del Producto:" />
+      <TextField fx:id="txfIdProducto" layoutX="215.0" layoutY="261.0" prefHeight="24.0" prefWidth="246.0" />
    </children>
 </Pane>

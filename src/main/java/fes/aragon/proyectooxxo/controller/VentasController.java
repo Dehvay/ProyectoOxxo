@@ -9,13 +9,16 @@ import javafx.scene.control.TextField;
 public class VentasController {
 
     @FXML
-    private TableColumn<?, ?> clmCantidad;
+    private TableColumn<?, ?> clmIDProducto;
 
     @FXML
     private TableColumn<?, ?> clmNombre;
 
     @FXML
-    private TableColumn<?, ?> clmPrecioUnitario;
+    private TableColumn<?, ?> cmlCantidad;
+
+    @FXML
+    private TableColumn<?, ?> cmlPrecioUnitario;
 
     @FXML
     private Button idAgregarProducto;

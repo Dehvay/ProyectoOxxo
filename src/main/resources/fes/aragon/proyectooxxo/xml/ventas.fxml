@@ -10,13 +10,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="661.0" type="BorderPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.VentasController">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="727.0" type="BorderPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.VentasController">
    <center>
-      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView prefHeight="434.0" prefWidth="618.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="clmNombre" prefWidth="359.0" text="Nombre" />
-          <TableColumn fx:id="clmCantidad" prefWidth="136.0" text="Cantidad" />
-            <TableColumn fx:id="clmPrecioUnitario" prefWidth="165.0" text="Precio Unitario" />
+          <TableColumn fx:id="clmNombre" prefWidth="320.0" text="Nombre" />
+          <TableColumn fx:id="clmIDProducto" prefWidth="209.0" text="ID Producto" />
+            <TableColumn fx:id="cmlCantidad" minWidth="0.0" prefWidth="91.0" text="Cantidad" />
+            <TableColumn fx:id="cmlPrecioUnitario" prefWidth="103.0" text="Precio Unitario" />
         </columns>
       </TableView>
    </center>
@@ -48,7 +49,7 @@
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: E21B35;" BorderPane.alignment="CENTER">
         <items>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del Producto" wrappingWidth="158.28125">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID del Producto" wrappingWidth="129.28125">
                <font>
                   <Font name="Book Antiqua" size="16.0" />
                </font>

@@ -10,20 +10,21 @@ public class Producto implements Serializable{
     public int cantidad;
     public double precioUnitario;
     public double precioDeVenta;
-    public String categoria;
     private SerializableImage imagen;
-
+    private int idP;
+    private String nombreImagen;
     public Producto(){
 
     }
 
-    public Producto(String nombre, String fechaDeCaducidad, int cantidad, double precioUnitario, double precioDeVenta, String categoria) {
+    public Producto(String nombre, String fechaDeCaducidad, int cantidad, double precioUnitario, double precioDeVenta, int idP, String nombreImagen) {
         this.nombre = nombre;
         this.fechaDeCaducidad = fechaDeCaducidad;
         this.cantidad = cantidad;
         this.precioUnitario = precioUnitario;
         this.precioDeVenta = precioDeVenta;
-        this.categoria = categoria;
+        this.idP = idP;
+        this.nombreImagen = nombreImagen;
     }
 
     public String getNombre() {
@@ -66,19 +67,27 @@ public class Producto implements Serializable{
         this.precioDeVenta = precioDeVenta;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
     public SerializableImage getImagen() {
         return imagen;
     }
 
     public void setImagen(SerializableImage imagen) {
         this.imagen = imagen;
+    }
+
+    public int getIdP() {
+        return idP;
+    }
+
+    public void setIdP(int idP) {
+        this.idP = idP;
+    }
+
+    public String getNombreImagen() {
+        return nombreImagen;
+    }
+
+    public void setNombreImagen(String nombreImagen) {
+        this.nombreImagen = nombreImagen;
     }
 }

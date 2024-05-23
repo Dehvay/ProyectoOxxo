@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Maquetado Version 1">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_24_14_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_24_14_57__Changes_.xml" afterDir="false" />
+    <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Maquetado Revisado por Mike">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/SinglentonProductos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/Inicio/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/Inicio/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/VentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/VentasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715815953160</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Maquetado Revisado por Mike">
+      <option name="closed" value="true" />
+      <created>1716393418713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716393418715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="INICIO DEL PROYECTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="INICIO DEL PROYECTO" />
+    <MESSAGE value="Maquetado Revisado por Mike" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maquetado Revisado por Mike" />
   </component>
 </project>
