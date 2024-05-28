@@ -62,8 +62,6 @@ public class ProductosController implements Initializable {
     private TableColumn<Producto, Double> cmlPrecioVenta;
 
     @FXML
-    private TableColumn<Producto, ?> cmlProveedor;
-    @FXML
     private TableColumn<Producto, Integer> cmlCantidad;
 
     @FXML

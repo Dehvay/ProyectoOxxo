@@ -36,7 +36,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="idVentaDiaria" mnemonicParsing="false" onAction="#eventoAbrirVentaDiaria" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Venta Diaria" textFill="WHITE" wrapText="true">
+            <Button fx:id="idInventario" mnemonicParsing="false" onAction="#eventoAbrirInventario" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Inventario" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="14.0" />
                </font>
