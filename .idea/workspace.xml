@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InventarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/ItemInventario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_24_14_57_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_24_14_57__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/SinglentonProveedores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_24_17_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_24_17_46__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InicioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProveedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProveedorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Proveedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/proveedores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/proveedores.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventadiaria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inventario.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +72,18 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dehvay/IdeaProjects/Tiendav2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dehvay/IdeaProjects/ProyectoOxxo-master&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fes.aragon.proyectooxxo.modelo" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

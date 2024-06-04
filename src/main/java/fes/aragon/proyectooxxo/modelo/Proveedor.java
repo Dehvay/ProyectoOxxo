@@ -11,16 +11,17 @@ public class Proveedor implements Serializable {
     public String correo;
     public String direccion;
     private SerializableImage imagen;
-
+    private String nombreImagen;
     public Proveedor(){
 
     }
 
-    public Proveedor(String nombre, String telefono, String correo, String direccion) {
+    public Proveedor(String nombre, String telefono, String correo, String direccion, String nombreImagen) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
         this.direccion = direccion;
+        this.nombreImagen = nombreImagen;
     }
 
     public String getNombre() {
@@ -61,5 +62,13 @@ public class Proveedor implements Serializable {
 
     public void setImagen(SerializableImage imagen) {
         this.imagen = imagen;
+    }
+
+    public String getNombreImagen() {
+        return nombreImagen;
+    }
+
+    public void setNombreImagen(String nombreImagen) {
+        this.nombreImagen = nombreImagen;
     }
 }

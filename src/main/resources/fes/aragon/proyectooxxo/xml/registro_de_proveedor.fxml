@@ -23,7 +23,7 @@
       <TextField fx:id="direcciontxt" layoutX="188.0" layoutY="145.0" prefHeight="24.0" prefWidth="297.0" />
       <TextField fx:id="correotxt" layoutX="188.0" layoutY="176.0" prefHeight="24.0" prefWidth="297.0" />
       <Label layoutX="31.0" layoutY="214.0" text="Imagen del Proveedor:" />
-      <ImageView fitHeight="195.0" fitWidth="297.0" layoutX="188.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgProveedor" fitHeight="195.0" fitWidth="297.0" layoutX="188.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="btnguardar" layoutX="239.0" layoutY="438.0" mnemonicParsing="false" onAction="#guardarProveedor" text="Guardar Proveedor" />
       <Button fx:id="btnImagen" layoutX="81.0" layoutY="259.0" mnemonicParsing="false" onAction="#abrirImagen" text="Imagen" />
    </children>

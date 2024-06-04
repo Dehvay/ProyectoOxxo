@@ -30,7 +30,7 @@
       </ToolBar>
    </top>
    <center>
-      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tblProveedores" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="cmlNombre" prefWidth="224.0" text="Nombre" />
           <TableColumn fx:id="cmlCorreo" prefWidth="199.0" text="Correo" />
