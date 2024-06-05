@@ -5,6 +5,7 @@ import fes.aragon.proyectooxxo.modelo.Producto;
 import fes.aragon.proyectooxxo.modelo.Proveedor;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProductos;
+import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -204,5 +205,8 @@ public class ProductosController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    public void refresTableView(){
+        Platform.runLater(() -> tblProductos.refresh());
     }
 }

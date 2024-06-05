@@ -2,10 +2,8 @@ package fes.aragon.proyectooxxo.controller;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
-import fes.aragon.proyectooxxo.modelo.Producto;
-import fes.aragon.proyectooxxo.modelo.Proveedor;
-import fes.aragon.proyectooxxo.modelo.SerializableImage;
-import fes.aragon.proyectooxxo.modelo.SinglentonProveedores;
+import fes.aragon.proyectooxxo.modelo.*;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -63,6 +61,9 @@ public class ProveedoresController implements Initializable {
 
     @FXML
     private TableView<Proveedor> tblProveedores;
+    //@FXML
+    //private TableView<Producto> tblProductos;
+    private ProductosController productosController;
 
 
     @FXML
@@ -146,9 +147,24 @@ public class ProveedoresController implements Initializable {
 
                         FontAwesomeIconView modificarIcono=new FontAwesomeIconView(FontAwesomeIcon.PENCIL);
                         modificarIcono.setGlyphStyle("-fx-cursor:hand;"+"-glyph-size:28px;"+"-fx-fill:#ff1744");
-                        borrarIcono.setOnMouseClicked((MouseEvent evento)->{
-                            int indice=tblProveedores.getSelectionModel().getSelectedIndex();
-                            SinglentonProveedores.getInstance().getLista().remove(indice);
+
+                        borrarIcono.setOnMouseClicked((MouseEvent evento) -> {
+                            int indice = tblProveedores.getSelectionModel().getSelectedIndex();
+                            if (indice >= 0) {
+                                Proveedor proveedor = tblProveedores.getSelectionModel().getSelectedItem();
+
+                                // Eliminar productos asociados al proveedor
+                                SinglentonProductos.getInstance().getLista().removeIf(producto -> producto.getProveedor().equals(proveedor));
+
+                                // Eliminar el proveedor
+                                SinglentonProveedores.getInstance().getLista().remove(indice);
+
+                                // Actualizar la vista de productos
+                                if (productosController != null){
+                                    productosController.refresTableView();
+                                }
+
+                            }
                         });
                         modificarIcono.setOnMouseClicked((MouseEvent evento)->{
                             modificarUsuario(tblProveedores.getSelectionModel().getSelectedIndex());
@@ -180,5 +196,18 @@ public class ProveedoresController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    /*private void refreshTableView(){
+        Platform.runLater(() -> {
+            Stage stage = (Stage) tblProductos.getScene().getWindow(); // 'someNode' puede ser cualquier nodo conocido
+            Scene scene = stage.getScene();
+            TableView<?> tblProveedores = (TableView<?>) scene.lookup("#tblProveedores");
+            if (tblProveedores != null) {
+                tblProveedores.refresh();
+            }
+        });
+    }*/
+    public void setProductosController(ProductosController productosController) {
+        this.productosController = productosController;
     }
 }
