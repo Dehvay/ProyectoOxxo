@@ -67,8 +67,12 @@ public class Proveedor implements Serializable {
     public String getNombreImagen() {
         return nombreImagen;
     }
-
     public void setNombreImagen(String nombreImagen) {
         this.nombreImagen = nombreImagen;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
     }
 }

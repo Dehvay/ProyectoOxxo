@@ -101,4 +101,5 @@ public class Producto implements Serializable{
     public void setNombreImagen(String nombreImagen) {
         this.nombreImagen = nombreImagen;
     }
+
 }

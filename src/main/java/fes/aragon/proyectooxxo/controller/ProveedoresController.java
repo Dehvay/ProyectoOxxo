@@ -159,7 +159,8 @@ public class ProveedoresController implements Initializable {
                                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                                 alert.setTitle("Confirmación de eliminación");
                                 alert.setHeaderText("¿Estás seguro de querer eliminar a este proveedor y sus productos asociados?");
-                                alert.setContentText("Proveedor: " + proveedor.getNombre() + "\nProductos asociados: " + productosAsociados + "\n\nEsta acción no se puede deshacer.");
+                                alert.setContentText("Proveedor: " + proveedor.getNombre() + "\nProductos asociados: " + productosAsociados
+                                        + "\n\nEsta acción no se puede deshacer.");
                                 Optional<ButtonType> result = alert.showAndWait();
                                 if (result.isPresent() && result.get() == ButtonType.OK){
                                     // Eliminar productos asociados al proveedor

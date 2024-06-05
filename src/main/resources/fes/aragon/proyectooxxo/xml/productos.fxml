@@ -11,15 +11,15 @@
    <center>
       <TableView fx:id="tblProductos" prefHeight="496.0" prefWidth="846.0" BorderPane.alignment="CENTER">
         <columns>
-            <TableColumn fx:id="cmlNombre" prefWidth="151.0" text="Nombre" />
-          <TableColumn fx:id="cmlId" prefWidth="145.0" text="Id Producto" />
-            <TableColumn fx:id="cmlFechaCaducidad" prefWidth="157.0" text="Fecha de Caducidad" />
-            <TableColumn fx:id="cmlPrecioUnitario" minWidth="0.0" prefWidth="136.0" text="Precio Unitario" />
-            <TableColumn fx:id="cmlPrecioVenta" minWidth="2.0" prefWidth="116.0" text="Precio Venta" />
-            <TableColumn fx:id="cmlImagen" prefWidth="116.0" text="Imagen" />
-            <TableColumn fx:id="cmlCantidad" minWidth="0.0" prefWidth="115.0" text="Cantidad" />
-            <TableColumn fx:id="cmlOperaciones" prefWidth="142.0" text="Operaciones" />
-            <TableColumn fx:id="cmlProveedor" prefWidth="137.0" text="Proveedor" />
+            <TableColumn fx:id="cmlProveedor" prefWidth="210.0" text="Proveedor" />
+          <TableColumn fx:id="cmlNombre" prefWidth="260.0" text="Nombre" />
+            <TableColumn fx:id="cmlId" prefWidth="109.0" text="ID del Producto" />
+            <TableColumn fx:id="cmlFechaCaducidad" minWidth="0.0" prefWidth="141.0" text="Fecha de Caducidad" />
+            <TableColumn fx:id="cmlPrecioUnitario" minWidth="2.0" prefWidth="123.0" text="Precio Unitario" />
+            <TableColumn fx:id="cmlPrecioVenta" prefWidth="110.0" text="Precio Venta" />
+            <TableColumn fx:id="cmlImagen" minWidth="0.0" prefWidth="71.0" text="Imagen" />
+            <TableColumn fx:id="cmlCantidad" text="Cantidad" />
+            <TableColumn fx:id="cmlOperaciones" prefWidth="111.0" text="Operaciones" />
         </columns>
       </TableView>
    </center>
