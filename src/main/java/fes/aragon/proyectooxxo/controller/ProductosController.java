@@ -2,6 +2,7 @@ package fes.aragon.proyectooxxo.controller;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import fes.aragon.proyectooxxo.modelo.Producto;
+import fes.aragon.proyectooxxo.modelo.Proveedor;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProductos;
 import javafx.beans.property.ReadOnlyObjectWrapper;
@@ -63,6 +64,9 @@ public class ProductosController implements Initializable {
 
     @FXML
     private TableColumn<Producto, Integer> cmlCantidad;
+
+    @FXML
+    private TableColumn<Producto, String> cmlProveedor;
 
     @FXML
     private Button idArchivoProductos;
@@ -141,6 +145,14 @@ public class ProductosController implements Initializable {
             String nombreImagen = cellData.getValue().getNombreImagen();
             SerializableImage image = cellData.getValue().getImagen();
             return new SimpleObjectProperty<>(image);
+        });
+        this.cmlProveedor.setCellValueFactory(cellData -> {
+            Proveedor proveedor = cellData.getValue().getProveedor();
+            if (proveedor != null) {
+                return new SimpleStringProperty(proveedor.getNombre());
+            } else {
+                return new SimpleStringProperty("Sin proveedor");
+            }
         });
         tblProductos.setItems(SinglentonProductos.getInstance().getLista());
         Callback<TableColumn<Producto,String>, TableCell<Producto,String>>
