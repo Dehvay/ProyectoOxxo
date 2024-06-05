@@ -12,10 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -28,7 +25,10 @@ import javafx.util.Callback;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 public class ProveedoresController implements Initializable {
 
@@ -61,8 +61,7 @@ public class ProveedoresController implements Initializable {
 
     @FXML
     private TableView<Proveedor> tblProveedores;
-    //@FXML
-    //private TableView<Producto> tblProductos;
+
     private ProductosController productosController;
 
 
@@ -84,7 +83,6 @@ public class ProveedoresController implements Initializable {
     @FXML
     void eventoArchivoProveedor(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
-        //      fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("FES", "*.fes"));
         File selectedFile = fileChooser.showOpenDialog(this.idArchivoProveedor.getScene().getWindow());
         if (selectedFile != null) {
             try {
@@ -152,16 +150,26 @@ public class ProveedoresController implements Initializable {
                             int indice = tblProveedores.getSelectionModel().getSelectedIndex();
                             if (indice >= 0) {
                                 Proveedor proveedor = tblProveedores.getSelectionModel().getSelectedItem();
-
-                                // Eliminar productos asociados al proveedor
-                                SinglentonProductos.getInstance().getLista().removeIf(producto -> producto.getProveedor().equals(proveedor));
-
-                                // Eliminar el proveedor
-                                SinglentonProveedores.getInstance().getLista().remove(indice);
-
-                                // Actualizar la vista de productos
-                                if (productosController != null){
-                                    productosController.refresTableView();
+                                //Mensaje de Confirmacion
+                                List<String> nombresProductos = SinglentonProductos.getInstance().getLista().stream()
+                                        .filter(producto -> producto.getProveedor().equals(proveedor))
+                                        .map(Producto::getNombre)
+                                        .collect(Collectors.toList());
+                                String productosAsociados = String.join(", ", nombresProductos);
+                                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                                alert.setTitle("Confirmación de eliminación");
+                                alert.setHeaderText("¿Estás seguro de querer eliminar a este proveedor y sus productos asociados?");
+                                alert.setContentText("Proveedor: " + proveedor.getNombre() + "\nProductos asociados: " + productosAsociados + "\n\nEsta acción no se puede deshacer.");
+                                Optional<ButtonType> result = alert.showAndWait();
+                                if (result.isPresent() && result.get() == ButtonType.OK){
+                                    // Eliminar productos asociados al proveedor
+                                    SinglentonProductos.getInstance().getLista().removeIf(producto -> producto.getProveedor().equals(proveedor));
+                                    // Eliminar el proveedor
+                                    SinglentonProveedores.getInstance().getLista().remove(indice);
+                                    // Actualizar la tabla de productos
+                                    if (productosController != null){
+                                        productosController.refresTableView();
+                                    }
                                 }
 
                             }
@@ -196,18 +204,5 @@ public class ProveedoresController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-    /*private void refreshTableView(){
-        Platform.runLater(() -> {
-            Stage stage = (Stage) tblProductos.getScene().getWindow(); // 'someNode' puede ser cualquier nodo conocido
-            Scene scene = stage.getScene();
-            TableView<?> tblProveedores = (TableView<?>) scene.lookup("#tblProveedores");
-            if (tblProveedores != null) {
-                tblProveedores.refresh();
-            }
-        });
-    }*/
-    public void setProductosController(ProductosController productosController) {
-        this.productosController = productosController;
     }
 }

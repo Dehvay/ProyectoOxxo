@@ -60,13 +60,13 @@ public class AgregarProveedorController {
     @FXML
     void guardarProveedor(ActionEvent event) {
         String nombreProveedor = nombreproveedortxt.getText();
-
-        //Verificar telefono proveedor
+        //Verificar telefono del proveedor
         String nuevoTelefono = (telefonotxt.getText());
         boolean telefonoDuplicado = telefonoDuplicados(nuevoTelefono);
         if (telefonoDuplicado){
             mensajeError("Error: Telefono duplicado","Este Telefono ya esta registrado para un proveedor, Ingresa otro Telefono.");
-        }else {//Guardado de Proveedor
+        }else {
+            //Guardado de Proveedor
             Proveedor proveedor = new Proveedor();
             proveedor.setNombre(nombreproveedortxt.getText());
             proveedor.setCorreo(correotxt.getText());
@@ -95,6 +95,9 @@ public class AgregarProveedorController {
                 stage.close();
             }
             limpiarCampos();
+            //Cerrar Ventana
+            Stage stage = (Stage) this.btnguardar.getScene().getWindow();
+            stage.close();
         }
     }
     public void indiceProveedores ( int indice){

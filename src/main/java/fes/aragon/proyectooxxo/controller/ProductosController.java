@@ -6,10 +6,8 @@ import fes.aragon.proyectooxxo.modelo.Proveedor;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProductos;
 import javafx.application.Platform;
-import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -96,7 +94,6 @@ public class ProductosController implements Initializable {
     @FXML
     void eventoArchivoProductos(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
-        //      fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("FES", "*.fes"));
         File selectedFile = fileChooser.showOpenDialog(this.idArchivoProductos.getScene().getWindow());
         if (selectedFile != null) {
             try {

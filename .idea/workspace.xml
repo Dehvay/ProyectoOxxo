@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="ComboBox funcional (mas o menos)">
+    <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Funcion de eliminar productos asociados a proveedores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/Inicio/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/Inicio/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProveedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProveedorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" afterDir="false" />
     </list>
@@ -143,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717549564492</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Funcion de eliminar productos asociados a proveedores">
+      <option name="closed" value="true" />
+      <created>1717602940728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717602940728</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="INICIO DEL PROYECTO" />
     <MESSAGE value="ComboBox funcional (mas o menos)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ComboBox funcional (mas o menos)" />
+    <MESSAGE value="Funcion de eliminar productos asociados a proveedores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcion de eliminar productos asociados a proveedores" />
   </component>
 </project>

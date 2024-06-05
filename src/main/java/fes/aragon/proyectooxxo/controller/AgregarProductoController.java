@@ -82,7 +82,8 @@ public class AgregarProductoController implements Initializable {
         boolean idDuplicado = idDuplicados(nuevoId);
         if (idDuplicado){
             mensajeError("Error: ID duplicado","Este ID ya esta en uso, Elige otro ID.");
-        }else {//Guardado de Producto
+        }else {
+            //Guardado de Producto
             Producto producto = new Producto();
             producto.setNombre(nombretxt.getText());
             producto.setIdP(Integer.parseInt(txfIdProducto.getText()));
@@ -115,9 +116,15 @@ public class AgregarProductoController implements Initializable {
                 stage.close();
             }
             limpiarCampos();
+            //Cerrar Ventana
+            Stage stage = (Stage) this.guardarbtn.getScene().getWindow();
+            stage.close();
         }
-
-        }
+    }
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        cmbProveedores.setItems(SinglentonProveedores.getInstance().getLista());
+    }
         ////////////
         public void indiceProductos ( int indice){
             this.indice = indice;
@@ -155,14 +162,10 @@ public class AgregarProductoController implements Initializable {
             alert.setContentText(mensaje);
             alert.showAndWait();
         }
+
         private boolean nombresDuplicados(String nombre){
         return SinglentonProductos.getInstance().getLista().stream().anyMatch(producto -> producto.getNombre().equalsIgnoreCase(nombre));
         }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        cmbProveedores.setItems(SinglentonProveedores.getInstance().getLista());
-    }
 }
 
 
