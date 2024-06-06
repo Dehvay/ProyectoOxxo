@@ -1,13 +1,10 @@
 package fes.aragon.proyectooxxo.modelo;
 
-import javafx.scene.image.Image;
-
 import java.io.Serializable;
 
 public class Producto implements Serializable{
     public String nombre;
     public String fechaDeCaducidad;
-    public int cantidad;
     public double precioUnitario;
     public double precioDeVenta;
     private SerializableImage imagen;
@@ -17,10 +14,9 @@ public class Producto implements Serializable{
 
     }
 
-    public Producto(String nombre, String fechaDeCaducidad, int cantidad, double precioUnitario, double precioDeVenta, int idP, String nombreImagen) {
+    public Producto(String nombre, String fechaDeCaducidad,  double precioUnitario, double precioDeVenta, int idP, String nombreImagen) {
         this.nombre = nombre;
         this.fechaDeCaducidad = fechaDeCaducidad;
-        this.cantidad = cantidad;
         this.precioUnitario = precioUnitario;
         this.precioDeVenta = precioDeVenta;
         this.idP = idP;
@@ -41,14 +37,6 @@ public class Producto implements Serializable{
 
     public void setFechaDeCaducidad(String fechaDeCaducidad) {
         this.fechaDeCaducidad = fechaDeCaducidad;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
     }
 
     public double getPrecioUnitario() {

@@ -32,14 +32,15 @@
    <center>
       <TableView fx:id="tblInventario" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="clmNombreProducto" prefWidth="172.0" text="Nombre" />
-          <TableColumn fx:id="clmIdProducto" minWidth="0.0" prefWidth="128.0" text="ID Producto" />
-            <TableColumn fx:id="clmProveedor" minWidth="0.0" prefWidth="136.0" text="Proveedor" />
-            <TableColumn fx:id="clmCantidad" prefWidth="96.0" text="Cantidad" />
-            <TableColumn fx:id="clmPrecioUnitario" minWidth="6.0" prefWidth="134.0" text="Precio Unitario" />
-            <TableColumn fx:id="clmPrecioVenta" minWidth="0.0" prefWidth="136.0" text="Precio Venta" />
-            <TableColumn fx:id="clmValorInventario" minWidth="0.0" prefWidth="136.0" text="Valor Inventario" />
-            <TableColumn fx:id="clmCategoria" minWidth="0.0" prefWidth="140.0" text="Categoria" />
+          <TableColumn fx:id="clmNombreProducto" prefWidth="280.0" text="Nombre" />
+          <TableColumn fx:id="clmIdProducto" minWidth="0.0" prefWidth="0.0" text="ID Producto" />
+            <TableColumn fx:id="clmProveedor" minWidth="0.0" prefWidth="139.0" text="Proveedor" />
+            <TableColumn fx:id="clmCantidad" prefWidth="82.0" text="Cantidad" />
+            <TableColumn fx:id="clmPrecioUnitario" minWidth="6.0" prefWidth="124.0" text="Precio Unitario" />
+            <TableColumn fx:id="clmPrecioVenta" minWidth="0.0" prefWidth="109.0" text="Precio Venta" />
+            <TableColumn fx:id="clmValorInventario" minWidth="0.0" prefWidth="124.0" text="Valor Inventario" />
+            <TableColumn fx:id="clmCategoria" minWidth="0.0" prefWidth="114.0" text="Categoria" />
+            <TableColumn fx:id="clmOperaciones" minWidth="0.0" prefWidth="106.0" text="Operaciones" />
         </columns>
       </TableView>
    </center>

@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Objects;
 
 public class AgregarProveedorController {
 
@@ -117,7 +118,7 @@ public class AgregarProveedorController {
 
     private boolean telefonoDuplicados(String nuevoTelefono){
         ObservableList<Proveedor> listaProveedor = SinglentonProveedores.getInstance().getLista();
-        return listaProveedor.stream().anyMatch(proveedor -> proveedor.getTelefono() == (nuevoTelefono));
+        return listaProveedor.stream().anyMatch(proveedor -> Objects.equals(proveedor.getTelefono(), nuevoTelefono));
 
     }
     private void mensajeError(String titulo, String mensaje){

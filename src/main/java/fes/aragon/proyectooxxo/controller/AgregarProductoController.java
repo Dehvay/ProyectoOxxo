@@ -26,9 +26,6 @@ public class AgregarProductoController {
     private TextField caducidadtxt;
 
     @FXML
-    private TextField cantidadtxt;
-
-    @FXML
     private Button guardarbtn;
 
     @FXML
@@ -80,7 +77,6 @@ public class AgregarProductoController {
             Producto producto = new Producto();
             producto.setNombre(nombretxt.getText());
             producto.setIdP(Integer.parseInt(txfIdProducto.getText()));
-            producto.setCantidad(Integer.parseInt(cantidadtxt.getText()));
             producto.setFechaDeCaducidad(caducidadtxt.getText());
             producto.setPrecioDeVenta(Double.parseDouble(preciodeventatxt.getText()));
             producto.setPrecioUnitario(Double.parseDouble(preciounitariotxt.getText()));
@@ -117,7 +113,6 @@ public class AgregarProductoController {
             nombretxt.setText(producto.getNombre());
             txfIdProducto.setText(String.valueOf(producto.getIdP()));
             caducidadtxt.setText(producto.fechaDeCaducidad);
-            cantidadtxt.setText(String.valueOf(producto.getCantidad()));
             preciodeventatxt.setText(String.valueOf(producto.getPrecioDeVenta()));
             preciounitariotxt.setText(String.valueOf(producto.getPrecioUnitario()));
             System.out.println(producto.getImagen());
@@ -126,7 +121,6 @@ public class AgregarProductoController {
 
         private void limpiarCampos(){
             nombretxt.clear();
-            cantidadtxt.clear();
             caducidadtxt.clear();
             txfIdProducto.clear();
             preciounitariotxt.clear();

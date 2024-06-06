@@ -1,15 +1,13 @@
 package fes.aragon.proyectooxxo.modelo;
 
-import javafx.scene.image.Image;
-
 import java.io.Serializable;
 
 public class Proveedor implements Serializable {
 
-    public String nombre;
-    public String telefono;
-    public String correo;
-    public String direccion;
+    private String nombre;
+    private String telefono;
+    private String correo;
+    private String direccion;
     private SerializableImage imagen;
     private String nombreImagen;
     public Proveedor(){

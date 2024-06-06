@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class SinglentonProductos {
     private static SinglentonProductos singlentonProductos;
-    private ObservableList<Producto> lista;
+    private final ObservableList<Producto> lista;
     private SinglentonProductos(){ lista = FXCollections.observableArrayList();}
     public static SinglentonProductos getInstance(){
         if (singlentonProductos == null){

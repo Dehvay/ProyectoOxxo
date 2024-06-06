@@ -2,7 +2,6 @@ package fes.aragon.proyectooxxo.controller;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
-import fes.aragon.proyectooxxo.modelo.Producto;
 import fes.aragon.proyectooxxo.modelo.Proveedor;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProveedores;
@@ -30,6 +29,7 @@ import javafx.util.Callback;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class ProveedoresController implements Initializable {
@@ -68,7 +68,7 @@ public class ProveedoresController implements Initializable {
     @FXML
     void eventoAgregarProveedor(ActionEvent event) {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml"));
+            Parent parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml")));
             Scene scene = new Scene(parent);
             Stage stage = new Stage();
             stage.setScene(scene);
@@ -150,9 +150,7 @@ public class ProveedoresController implements Initializable {
                             int indice=tblProveedores.getSelectionModel().getSelectedIndex();
                             SinglentonProveedores.getInstance().getLista().remove(indice);
                         });
-                        modificarIcono.setOnMouseClicked((MouseEvent evento)->{
-                            modificarUsuario(tblProveedores.getSelectionModel().getSelectedIndex());
-                        });
+                        modificarIcono.setOnMouseClicked((MouseEvent evento)-> modificarUsuario(tblProveedores.getSelectionModel().getSelectedIndex()));
                         HBox hBox=new HBox(modificarIcono,borrarIcono);
                         hBox.setStyle("-fx-alignment:center");
                         HBox.setMargin(modificarIcono, new Insets(2,2,0,3));
@@ -170,7 +168,7 @@ public class ProveedoresController implements Initializable {
     private void modificarUsuario(int indice){
         try {
             FXMLLoader modificar = new FXMLLoader(getClass().getResource("/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml"));
-            Parent parent = (Parent) modificar.load();
+            Parent parent = modificar.load();
             ((AgregarProveedorController) modificar.getController()).indiceProveedores(indice);
             Scene scene = new Scene(parent);
             Stage stage = new Stage();

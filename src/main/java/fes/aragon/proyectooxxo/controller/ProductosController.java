@@ -4,10 +4,7 @@ import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import fes.aragon.proyectooxxo.modelo.Producto;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProductos;
-import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -33,6 +30,7 @@ import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class ProductosController implements Initializable {
@@ -62,9 +60,6 @@ public class ProductosController implements Initializable {
     private TableColumn<Producto, Double> cmlPrecioVenta;
 
     @FXML
-    private TableColumn<Producto, Integer> cmlCantidad;
-
-    @FXML
     private Button idArchivoProductos;
 
     @FXML
@@ -76,7 +71,7 @@ public class ProductosController implements Initializable {
     @FXML
     void eventoAgregarProducto(ActionEvent event) {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml"));
+            Parent parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml")));
             Scene scene = new Scene(parent);
             Stage stage = new Stage();
             stage.setScene(scene);
@@ -132,7 +127,6 @@ public class ProductosController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.cmlNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        this.cmlCantidad.setCellValueFactory(new PropertyValueFactory<>("cantidad"));
         this.cmlFechaCaducidad.setCellValueFactory(new PropertyValueFactory<>("fechaDeCaducidad"));
         this.cmlId.setCellValueFactory(new PropertyValueFactory<>("idP"));
         this.cmlPrecioVenta.setCellValueFactory(new PropertyValueFactory<>("precioDeVenta"));
@@ -145,7 +139,7 @@ public class ProductosController implements Initializable {
         tblProductos.setItems(SinglentonProductos.getInstance().getLista());
         Callback<TableColumn<Producto,String>, TableCell<Producto,String>>
                 celda=(TableColumn<Producto,String> parametros)->{
-            final TableCell<Producto,String> cel=new TableCell<>(){
+            final TableCell<Producto,String> cel= new TableCell<>(){
                 @Override
                 protected void updateItem(String s, boolean b) {
                     super.updateItem(s, b);
@@ -162,9 +156,7 @@ public class ProductosController implements Initializable {
                             int indice=tblProductos.getSelectionModel().getSelectedIndex();
                             SinglentonProductos.getInstance().getLista().remove(indice);
                         });
-                        modificarIcono.setOnMouseClicked((MouseEvent evento)->{
-                            modificarUsuario(tblProductos.getSelectionModel().getSelectedIndex());
-                        });
+                        modificarIcono.setOnMouseClicked((MouseEvent evento)-> modificarUsuario(tblProductos.getSelectionModel().getSelectedIndex()));
                         HBox hBox=new HBox(modificarIcono,borrarIcono);
                         hBox.setStyle("-fx-alignment:center");
                         HBox.setMargin(modificarIcono, new Insets(2,2,0,3));
@@ -182,7 +174,7 @@ public class ProductosController implements Initializable {
     private void modificarUsuario(int indice){
         try {
             FXMLLoader modificar = new FXMLLoader(getClass().getResource("/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml"));
-            Parent parent = (Parent) modificar.load();
+            Parent parent = modificar.load();
             ((AgregarProductoController) modificar.getController()).indiceProductos(indice);
             Scene scene = new Scene(parent);
             Stage stage = new Stage();
