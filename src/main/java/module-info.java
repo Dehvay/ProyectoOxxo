@@ -3,6 +3,7 @@ module fes.aragon.proyectooxxo {
     requires javafx.fxml;
     requires org.kordamp.bootstrapfx.core;
     requires de.jensd.fx.glyphs.fontawesome;
+    requires java.desktop;
 
     exports fes.aragon.proyectooxxo.Inicio;
     opens fes.aragon.proyectooxxo.Inicio to javafx.fxml;
