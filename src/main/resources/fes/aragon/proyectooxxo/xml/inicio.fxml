@@ -27,14 +27,6 @@
                   <Cursor fx:constant="CLOSED_HAND" />
                </cursor>
             </Button>
-          <Button fx:id="idVentas" mnemonicParsing="false" onAction="#eventoAbrirVentas" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #faf851;" text="VENTAS">
-               <font>
-                  <Font name="Noto Mono" size="15.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="CLOSED_HAND" />
-               </cursor>
-            </Button>
             <Button fx:id="idProductos" mnemonicParsing="false" onAction="#eventoAbrirProductos" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #faf851;" text="PRODUCTOS">
                <font>
                   <Font name="Noto Mono" size="15.0" />

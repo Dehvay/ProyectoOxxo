@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Final fer">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InventarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InventarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/VentasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventas.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Inicio" />
         <item itemvalue="Application.Inicio" />
       </list>
     </recent_temporary>
