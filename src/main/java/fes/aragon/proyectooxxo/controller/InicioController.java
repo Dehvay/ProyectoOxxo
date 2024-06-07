@@ -20,11 +20,6 @@ public class InicioController {
     @FXML
     private Button idProveedores;
 
-    @FXML
-    private Button idVentas;
-
-    @FXML
-    private Button idInventario;
 
     @FXML
     void eventoAbrirInicio(ActionEvent event) { ventana("/fes/aragon/proyectooxxo/xml/inicioboton.fxml");}
@@ -38,12 +33,6 @@ public class InicioController {
         ventana("/fes/aragon/proyectooxxo/xml/proveedores.fxml");
     }
 
-    @FXML
-    void eventoAbrirVentas(ActionEvent event) {
-        ventana("/fes/aragon/proyectooxxo/xml/ventas.fxml");
-    }
-    @FXML
-    void eventoAbrirInventario(ActionEvent event) {ventana("/fes/aragon/proyectooxxo/xml/inventario.fxml");}
 
     ////////////////
     private void ventana(String ruta){

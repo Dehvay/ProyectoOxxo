@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Mensaje de Confirmacion para eliminar Proveedores y Productos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Proveedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InventarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/VentasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/ItemInventario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inventario.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventas.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
