@@ -1,6 +1,7 @@
 package fes.aragon.proyectooxxo.controller;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
+
 import fes.aragon.proyectooxxo.modelo.Producto;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProductos;
@@ -77,6 +78,8 @@ public class ProductosController implements Initializable {
             stage.setScene(scene);
             stage.initStyle(StageStyle.UTILITY);
             stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setTitle("PRODUCTOS OXXO");
+            stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -156,8 +159,9 @@ public class ProductosController implements Initializable {
                             int indice=tblProductos.getSelectionModel().getSelectedIndex();
                             SinglentonProductos.getInstance().getLista().remove(indice);
                         });
-                        modificarIcono.setOnMouseClicked((MouseEvent evento)-> modificarUsuario(tblProductos.getSelectionModel().getSelectedIndex()));
-                        HBox hBox=new HBox(modificarIcono,borrarIcono);
+                        modificarIcono.setOnMouseClicked((MouseEvent evento)-> modificarUsuario(tblProductos.getSelectionModel().
+                                getSelectedIndex()));
+                            HBox hBox=new HBox(modificarIcono,borrarIcono);
                         hBox.setStyle("-fx-alignment:center");
                         HBox.setMargin(modificarIcono, new Insets(2,2,0,3));
                         HBox.setMargin(borrarIcono, new Insets(2,2,0,3));

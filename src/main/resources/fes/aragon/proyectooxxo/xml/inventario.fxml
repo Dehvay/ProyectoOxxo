@@ -1,46 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="1079.0" type="BorderPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.InventarioController">
    <top>
-      <ToolBar prefHeight="81.0" prefWidth="791.0" style="-fx-background-color: E21B35;" BorderPane.alignment="CENTER">
+      <ToolBar prefHeight="81.0" prefWidth="791.0" style="-fx-background-color: #be1704;" BorderPane.alignment="CENTER">
         <items>
-          <Button fx:id="idbtnAgregarProdI" mnemonicParsing="false" onAction="#eventoAgregarProdaInventario" style="-fx-background-color: FFCD00;" text="Agregar Producto a Inventario" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+          <Button fx:id="idbtnAgregarProdI" mnemonicParsing="false" onAction="#eventoAgregarProdaInventario" style="-fx-background-color: #faf851;" text="Agregar Producto a Inventario" textAlignment="JUSTIFY" wrapText="true">
                <font>
-                  <Font size="16.0" />
+                  <Font name="Noto Mono" size="16.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="idbtnGuardarInvent" mnemonicParsing="false" onAction="#eventoGuardarInventario" style="-fx-background-color: FFCD00;" text="Guardar Inventario" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+            <Button fx:id="idbtnGuardarInvent" mnemonicParsing="false" onAction="#eventoGuardarInventario" style="-fx-background-color: #faf851;" text="Guardar Inventario" textAlignment="JUSTIFY" wrapText="true">
                <font>
-                  <Font size="16.0" />
+                  <Font name="Noto Mono" size="16.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="idbtnAbrirInventario" mnemonicParsing="false" onAction="#eventoAbrirInventario" style="-fx-background-color: FFCD00;" text="Abrir Inventario" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+            <Button fx:id="idbtnAbrirInventario" mnemonicParsing="false" onAction="#eventoAbrirInventario" style="-fx-background-color: #faf851;" text="Abrir Inventario" textAlignment="JUSTIFY" wrapText="true">
                <font>
-                  <Font size="16.0" />
+                  <Font name="Noto Mono" size="16.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
+            <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="233.0" style="-fx-background-color: #be1704;" />
+            <ImageView fitHeight="64.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/Oxxo_Logo.png" />
+               </image>
+            </ImageView>
         </items>
       </ToolBar>
    </top>
    <center>
-      <TableView fx:id="tblInventario" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tblInventario" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #989898;" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="clmNombreProducto" prefWidth="280.0" text="Nombre" />
-          <TableColumn fx:id="clmIdProducto" minWidth="0.0" prefWidth="0.0" text="ID Producto" />
-            <TableColumn fx:id="clmProveedor" minWidth="0.0" prefWidth="139.0" text="Proveedor" />
-            <TableColumn fx:id="clmCantidad" prefWidth="82.0" text="Cantidad" />
-            <TableColumn fx:id="clmPrecioUnitario" minWidth="6.0" prefWidth="124.0" text="Precio Unitario" />
+          <TableColumn fx:id="clmNombreProducto" prefWidth="189.0" text="Nombre" />
+          <TableColumn fx:id="clmIdProducto" minWidth="0.0" prefWidth="91.0" text="ID Producto" />
+            <TableColumn fx:id="clmProveedor" minWidth="0.0" prefWidth="132.0" text="Proveedor" />
+            <TableColumn fx:id="clmCantidad" prefWidth="83.0" text="Cantidad" />
+            <TableColumn fx:id="clmPrecioUnitario" minWidth="6.0" prefWidth="116.0" text="Precio Unitario" />
             <TableColumn fx:id="clmPrecioVenta" minWidth="0.0" prefWidth="109.0" text="Precio Venta" />
-            <TableColumn fx:id="clmValorInventario" minWidth="0.0" prefWidth="124.0" text="Valor Inventario" />
-            <TableColumn fx:id="clmCategoria" minWidth="0.0" prefWidth="114.0" text="Categoria" />
-            <TableColumn fx:id="clmOperaciones" minWidth="0.0" prefWidth="106.0" text="Operaciones" />
+            <TableColumn fx:id="clmValorInventario" minWidth="0.0" prefWidth="126.0" text="Valor Inventario" />
+            <TableColumn fx:id="clmCategoria" minWidth="0.0" prefWidth="124.0" text="Categoria" />
+            <TableColumn fx:id="clmOperaciones" minWidth="0.0" prefWidth="108.0" text="Operaciones" />
         </columns>
       </TableView>
    </center>

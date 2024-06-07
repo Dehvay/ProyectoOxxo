@@ -14,7 +14,7 @@ public class Inicio extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Inicio.class.getResource("/fes/aragon/proyectooxxo/xml/inicio.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("SISTEMA DE INVENTARIO OXXO");
-        try (InputStream iconStream = getClass().getResourceAsStream("/fes/aragon/proyectooxxo/imagen/Oxxo_Logo.png")) {
+        try (InputStream iconStream = getClass().getResourceAsStream("/fes/aragon/proyectooxxo/imagen/Oxxo_Logo_Icono.png")) {
             if (iconStream == null) {
                 throw new IOException("Icono no encontrado en la ruta especificada.");
             }
@@ -25,6 +25,8 @@ public class Inicio extends Application {
         }
 
         stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.setResizable(false);
         stage.show();
     }
 

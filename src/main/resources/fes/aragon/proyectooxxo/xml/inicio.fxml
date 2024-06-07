@@ -1,54 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="btpPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1290.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.InicioController">
+<BorderPane fx:id="btpPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1290.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.proyectooxxo.controller.InicioController">
    <left>
-      <ToolBar orientation="VERTICAL" prefHeight="400.0" prefWidth="123.0" style="-fx-background-color: E21B35; -fx-border-color: 000000;" BorderPane.alignment="CENTER">
+      <ToolBar orientation="VERTICAL" prefHeight="400.0" prefWidth="123.0" style="-fx-background-color: #be1704;" BorderPane.alignment="CENTER">
         <items>
-            <ImageView fitHeight="57.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="54.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../imagen/Oxxo_Logo.png" />
+                  <Image url="@../imagen/Oxxo_Logo_barra.png" />
                </image>
             </ImageView>
-            <Button fx:id="idInicio" mnemonicParsing="false" onAction="#eventoAbrirInicio" prefHeight="35.0" prefWidth="110.0" snapToPixel="false" style="-fx-background-color: #FFCD00;" text="Inicio" textFill="WHITE">
+            <Button fx:id="idInicio" mnemonicParsing="false" onAction="#eventoAbrirInicio" prefHeight="35.0" prefWidth="110.0" snapToPixel="false" style="-fx-background-color: #faf851;" text="INICIO">
                <font>
-                  <Font name="Book Antiqua" size="16.0" />
+                  <Font name="Noto Mono" size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
-          <Button fx:id="idVentas" mnemonicParsing="false" onAction="#eventoAbrirVentas" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Ventas" textFill="WHITE">
+          <Button fx:id="idVentas" mnemonicParsing="false" onAction="#eventoAbrirVentas" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #faf851;" text="VENTAS">
                <font>
-                  <Font name="Book Antiqua" size="16.0" />
+                  <Font name="Noto Mono" size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="idProductos" mnemonicParsing="false" onAction="#eventoAbrirProductos" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Productos" textFill="WHITE">
+            <Button fx:id="idProductos" mnemonicParsing="false" onAction="#eventoAbrirProductos" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #faf851;" text="PRODUCTOS">
                <font>
-                  <Font name="Book Antiqua" size="16.0" />
+                  <Font name="Noto Mono" size="15.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="idProveedores" mnemonicParsing="false" onAction="#eventoAbrirProveedores" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Proveedores" textFill="WHITE">
+            <Button fx:id="idProveedores" mnemonicParsing="false" onAction="#eventoAbrirProveedores" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #faf851;" text="PROVEEDORES">
                <font>
-                  <Font size="14.0" />
+                  <Font name="Noto Mono" size="13.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="idInventario" mnemonicParsing="false" onAction="#eventoAbrirInventario" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #FFCD00;" text="Inventario" textFill="WHITE" wrapText="true">
+            <Button fx:id="idInventario" mnemonicParsing="false" onAction="#eventoAbrirInventario" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #faf851;" text="INVENTARIO" wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font name="Noto Mono" size="14.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
             </Button>
         </items>
       </ToolBar>
    </left>
    <center>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../imagen/Oxxo_Logo.png" />
-         </image>
-      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="484.0" layoutY="171.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/Oxxo_Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="450.0" layoutY="297.0" style="-fx-background-color: #be1704; -fx-border-color: #000000; -fx-border-width: 3;" text="A LA VUELTA DE TU VIDA" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Likhan" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="379.0" layoutY="370.0" text="BIENVENIDO AL SISTEMA DE INVENTARIO DE TU TIENDA OXXO" textFill="WHITE">
+               <font>
+                  <Font name="Likhan" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="416.0" layoutY="419.0" text="SELECCIONA LA OPERACIÓN QUE DESEES REALIZAR" textFill="WHITE">
+               <font>
+                  <Font name="Likhan" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </center>
 </BorderPane>

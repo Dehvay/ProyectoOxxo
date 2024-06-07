@@ -17,7 +17,6 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Objects;
 
 public class AgregarProveedorController {
 
@@ -61,7 +60,6 @@ public class AgregarProveedorController {
     @FXML
     void guardarProveedor(ActionEvent event) {
         String nombreProveedor = nombreproveedortxt.getText();
-
         //Verificar telefono proveedor
         String nuevoTelefono = (telefonotxt.getText());
         boolean telefonoDuplicado = telefonoDuplicados(nuevoTelefono);
@@ -118,8 +116,8 @@ public class AgregarProveedorController {
 
     private boolean telefonoDuplicados(String nuevoTelefono){
         ObservableList<Proveedor> listaProveedor = SinglentonProveedores.getInstance().getLista();
-        return listaProveedor.stream().anyMatch(proveedor -> Objects.equals(proveedor.getTelefono(), nuevoTelefono));
-
+//        return listaProveedor.stream().anyMatch(proveedor -> Objects.equals(proveedor.getTelefono(), nuevoTelefono));
+        return false;
     }
     private void mensajeError(String titulo, String mensaje){
         Alert alert = new Alert(Alert.AlertType.ERROR);

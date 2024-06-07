@@ -63,11 +63,6 @@ public class AgregarProductoController {
 
     @FXML
     void guardarProducto(ActionEvent event) {
-        String nombreProducto = nombretxt.getText();
-        if (nombresDuplicados(nombreProducto)){
-            mensajeError("Error", "El nombre del producto ya esta en uso. Elige otro nombre");
-            return;
-        }
         //Verificar id de Productos
         int nuevoId = Integer.parseInt(txfIdProducto.getText());
         boolean idDuplicado = idDuplicados(nuevoId);
@@ -129,8 +124,9 @@ public class AgregarProductoController {
         }
 
         private boolean idDuplicados(int nuevoId){
-        ObservableList<Producto> listaProducto = SinglentonProductos.getInstance().getLista();
-        return listaProducto.stream().anyMatch(producto -> producto.getIdP() == nuevoId);
+            ObservableList<Producto> listaProducto = SinglentonProductos.getInstance().getLista();
+//            return listaProducto.stream().anyMatch(producto -> producto.getIdP() == nuevoId);
+            return false;
         }
         private void mensajeError(String titulo, String mensaje){
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -138,9 +134,6 @@ public class AgregarProductoController {
             alert.setHeaderText(null);
             alert.setContentText(mensaje);
             alert.showAndWait();
-        }
-        private boolean nombresDuplicados(String nombre){
-        return SinglentonProductos.getInstance().getLista().stream().anyMatch(producto -> producto.getNombre().equalsIgnoreCase(nombre));
         }
 }
 
