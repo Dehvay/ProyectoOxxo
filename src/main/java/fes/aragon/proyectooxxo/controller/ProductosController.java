@@ -5,6 +5,7 @@ import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import fes.aragon.proyectooxxo.modelo.Producto;
 import fes.aragon.proyectooxxo.modelo.SerializableImage;
 import fes.aragon.proyectooxxo.modelo.SinglentonProductos;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -188,5 +189,8 @@ public class ProductosController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    public void refresTableView(){
+        Platform.runLater(() -> tblProductos.refresh());
     }
 }

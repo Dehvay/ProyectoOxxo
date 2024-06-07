@@ -10,17 +10,20 @@ public class Producto implements Serializable{
     private SerializableImage imagen;
     private int idP;
     private String nombreImagen;
+    private Proveedor proveedor;
     public Producto(){
 
     }
 
-    public Producto(String nombre, String fechaDeCaducidad,  double precioUnitario, double precioDeVenta, int idP, String nombreImagen) {
+    public Producto(String nombre, String fechaDeCaducidad, double precioUnitario, double precioDeVenta, SerializableImage imagen, int idP, String nombreImagen, Proveedor proveedor) {
         this.nombre = nombre;
         this.fechaDeCaducidad = fechaDeCaducidad;
         this.precioUnitario = precioUnitario;
         this.precioDeVenta = precioDeVenta;
+        this.imagen = imagen;
         this.idP = idP;
         this.nombreImagen = nombreImagen;
+        this.proveedor = proveedor;
     }
 
     public String getNombre() {
@@ -77,5 +80,13 @@ public class Producto implements Serializable{
 
     public void setNombreImagen(String nombreImagen) {
         this.nombreImagen = nombreImagen;
+    }
+
+    public Proveedor getProveedor() {
+        return proveedor;
+    }
+
+    public void setProveedor(Proveedor proveedor) {
+        this.proveedor = proveedor;
     }
 }

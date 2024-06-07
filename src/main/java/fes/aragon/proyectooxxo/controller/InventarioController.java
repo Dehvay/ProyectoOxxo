@@ -95,8 +95,6 @@ public class InventarioController implements Initializable {
             stage.setScene(scene);
             stage.initStyle(StageStyle.UTILITY);
             stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setTitle("INGRESAR A INVENTARIO OXXO");
-            stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -2,9 +2,7 @@ package fes.aragon.proyectooxxo.controller;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
-import fes.aragon.proyectooxxo.modelo.Proveedor;
-import fes.aragon.proyectooxxo.modelo.SerializableImage;
-import fes.aragon.proyectooxxo.modelo.SinglentonProveedores;
+import fes.aragon.proyectooxxo.modelo.*;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,10 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -28,9 +23,8 @@ import javafx.util.Callback;
 
 import java.io.*;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.ResourceBundle;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ProveedoresController implements Initializable {
 
@@ -63,6 +57,7 @@ public class ProveedoresController implements Initializable {
 
     @FXML
     private TableView<Proveedor> tblProveedores;
+    private ProductosController productosController;
 
 
     @FXML
@@ -151,6 +146,32 @@ public class ProveedoresController implements Initializable {
                         borrarIcono.setOnMouseClicked((MouseEvent evento)->{
                             int indice=tblProveedores.getSelectionModel().getSelectedIndex();
                             SinglentonProveedores.getInstance().getLista().remove(indice);
+                           /* if (indice >= 0) {
+                                Proveedor proveedor = tblProveedores.getSelectionModel().getSelectedItem();
+                                //Mensaje de Confirmacion
+                                List<String> nombresProductos = SinglentonProductos.getInstance().getLista().stream()
+                                        .filter(producto -> producto.getProveedor().equals(proveedor))
+                                        .map(Producto::getNombre)
+                                        .collect(Collectors.toList());
+                                String productosAsociados = String.join(", ", nombresProductos);
+                                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                                alert.setTitle("Confirmación de eliminación");
+                                alert.setHeaderText("¿Estás seguro de querer eliminar a este proveedor y sus productos asociados?");
+                                alert.setContentText("Proveedor: " + proveedor.getNombre() + "\nProductos asociados: " + productosAsociados
+                                        + "\n\nEsta acción no se puede deshacer.");
+                                Optional<ButtonType> result = alert.showAndWait();
+                                if (result.isPresent() && result.get() == ButtonType.OK){
+                                    // Eliminar productos asociados al proveedor
+                                    SinglentonProductos.getInstance().getLista().removeIf(producto -> producto.getProveedor().equals(proveedor));
+                                    // Eliminar el proveedor
+                                    SinglentonProveedores.getInstance().getLista().remove(indice);
+                                    // Actualizar la tabla de productos
+                                    if (productosController != null){
+                                        productosController.refresTableView();
+                                    }
+                                }
+
+                            }*/
                         });
                         modificarIcono.setOnMouseClicked((MouseEvent evento)-> modificarUsuario(tblProveedores.getSelectionModel().getSelectedIndex()));
                         HBox hBox=new HBox(modificarIcono,borrarIcono);

@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Agregue un icono a la ventana xd">
+    <list default="true" id="cbc90efb-784e-4b42-8507-62fc01bcb046" name="Changes" comment="Final fer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/Inicio/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/Inicio/Inicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProveedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/AgregarProveedorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InventarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/InventarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProductosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/controller/ProveedoresController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicioboton.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inicioboton.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inventario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/inventario.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/productos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/proveedores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/proveedores.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_item.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_producto.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/registro_de_proveedor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fes/aragon/proyectooxxo/xml/ventas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fes/aragon/proyectooxxo/modelo/Producto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -68,33 +57,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Inicio.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dehvay/IdeaProjects/CatalogoJavaFX",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Inicio.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dehvay/IdeaProjects/CatalogoJavaFX&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="fes.aragon.proyectooxxo.modelo" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fes.aragon.proyectooxxo.Inicio.Inicio" />
+      <module name="ProyectoOxxo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fes.aragon.proyectooxxo.Inicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Inicio" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-f00315f9" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
